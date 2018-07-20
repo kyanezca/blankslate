@@ -237,7 +237,7 @@ h3 {
 }
 
 .main-feed {
-	max-width: 875px;
+	max-width: 850px;
 }
 
 .sidebar-item {
@@ -266,7 +266,7 @@ h3 {
 .slick-prev:before, .slick-next:before {color: black; font-size: 30px;}
 
 .slick-track  {
-	height: 570px;
+	height: 400px;
 }
 
 .slick-track img {
@@ -282,4 +282,38 @@ h3 {
     z-index: 100;
 }
 
+.sidebar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
 
+.sidebar ul.xoxo li, .calendar {
+	margin-top: 40px;
+}
+
+.mlbdate {
+	display: none;
+}
+
+.slick-track li span {
+    z-index: 5000;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255,255,255,0.5);
+    padding: 20px 30px 0 30px;
+    height: 90px;
+}
+
+#news-feed li:nth-child(-n+5) {
+    color: green;   
+    display: none;
+}
+
+#news-feed {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
