@@ -9,7 +9,7 @@
 <?php wp_footer(); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-<script src="wp-content/themes/blankslate/js/scripts.js"></script>
+<script src="/wordpress/wp-content/themes/blankslate/js/scripts.js"></script>
 
 </body>
 </html>

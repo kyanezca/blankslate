@@ -6,9 +6,9 @@
 
 <?php if ( ! post_password_required() ) comments_template( '', true ); ?>
 <?php endwhile; endif; ?>
-			<hr>
+			
 <ul class="single-item">
-<li>
+
  <?php
 	                $args = array(
 	                    'post_type' => 'post',
@@ -24,7 +24,7 @@
 	                    while ( $arr_posts->have_posts() ) :
 	                        $arr_posts->the_post();
 	                        ?>
-	                        <li><?php the_post_thumbnail(); ?><span><a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php the_excerpt(__('(more…)')); ?></span></li>
+	                        <li><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><span><?php the_title(); ?><?php the_excerpt(__('(more…)')); ?></a></span></li>
 	           
 
 
@@ -32,10 +32,10 @@
 	                        <?php
 	                    endwhile;
 	                endif;
-                ?></li>
+                ?>
 </ul>
 					<!-- individual feed post goes here -->
-				
+<hr>				
 <!-- // Define our WP Query Parameters -->
 <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
  
